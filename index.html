@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css" text="text/css">
 
     <script>
+        var forBlob = "duck.png";
+        var forBox1 = "fish.png";
 
         $(function () {
 
@@ -20,21 +22,20 @@
                 $("p").fadeOut("slow").fadeIn("slow")
                 $(".ducky").animate({ left: '50px' }).animate({ left: '100px' }).animate({ left: '150px' }).animate({ left: '200px' }).animate({ top: '200px' }).animate({ left: '850px' })
                 $(".blobby").fadeOut("fast").fadeIn("slow").animate({ left: '300px' }).animate({ top: '100px' }).animate({ left: '950px' }).fadeOut("slow").delay(1000)
-                $(".blobby").attr("src", "lake.jpg").fadeIn("slow")
+                $(".blobby").attr("src", "bird.png").fadeIn("slow")
                 $(".box2").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '400px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).fadeIn("slow")
-                $(".box1").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).fadeIn("slow")
+                $(".box1").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).addClass('showBird').fadeIn("slow")
+                //.css("background-image", "url('bird.png')")
                 $("p").animate({ right: '100px' }).animate({ left: '100px' })
                 $(".box3").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '700px' }).fadeOut("slow").delay(1000).fadeIn("slow")
             });
         });
 
     </script>
-    <script>
-        var forBlob ("duck.png");
-        var forBox1("fish.png")
 
 
-    </script>
+
+
 </head>
 
 <body>

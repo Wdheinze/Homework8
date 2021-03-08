@@ -46,3 +46,8 @@ button{
     
     position: absolute;
 }
+
+.showBird{
+    background-image: url('bird.png');
+    background-color:none;
+}
