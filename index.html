@@ -24,13 +24,19 @@
                 $(".blobby").fadeOut("fast").fadeIn("slow").animate({ left: '300px' }).animate({ top: '100px' }).animate({ left: '950px' }).fadeOut("slow").delay(1000)
                 $(".blobby").attr("src", "bird.png").fadeIn("slow")
                 $(".box2").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '400px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).addClass('showFish').fadeIn("slow")
-                $(".box1").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).addClass('showBird').fadeIn("slow")
-                //.css("background-image", "url('bird.png')")
+               // $(".box1").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).addClass('showBird').fadeIn("slow")
+               $(".box1").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).fadeIn("slow")
+               setTimeout(addNewClass,3000);
+              //  .css("background-image", "url('bird.png')")
                 $("p").animate({ right: '100px' }).animate({ left: '100px' })
                 $(".box3").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '700px' }).fadeOut("slow").delay(1000).fadeIn("slow")
             });
         });
 
+        function addNewClass()
+        {
+            $(".box1").addClass('showBird');
+        }
     </script>
 
 
