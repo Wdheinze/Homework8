@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <title>Homework8</title>
+    <link rel="stylesheet" href="style.css" text="text/css">
+
+    <script>
+
+        $(function () {
+
+        });
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").fadeOut("slow").fadeIn("slow")
+                $(".ducky").animate({ left: '50px' }).animate({ left: '100px' }).animate({ left: '150px' }).animate({ left: '200px' }).animate({ top: '200px' }).animate({ left: '850px' })
+                $(".blobby").fadeOut("fast").fadeIn("slow").animate({ left: '300px' }).animate({ top: '100px' }).animate({ left: '950px' }).fadeOut("slow").delay(1000)
+                $(".blobby").attr("src", "lake.jpg").fadeIn("slow")
+                $(".box2").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '400px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).fadeIn("slow")
+                $(".box1").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '850px' }).fadeOut("slow").delay(1000).fadeIn("slow")
+                $("p").animate({ right: '100px' }).animate({ left: '100px' })
+                $(".box3").fadeOut("fast").fadeIn("fast").animate({ left: '100px' }).animate({ top: '100px' }).animate({ left: '700px' }).fadeOut("slow").delay(1000).fadeIn("slow")
+            });
+        });
+
+    </script>
+    <script>
+        var forBlob ("duck.png");
+        var forBox1("fish.png")
+
+
+    </script>
+</head>
+
+<body>
+    <p>Welcome to Homework 8</p>
+    <br>
+    <br>
+    <p>lets have fun!</p>
+    <img class="box3" width="500px" height="500px" img src="lake.jpg">
+    <img class="ducky" width="200px" height="200px" img src="duck.jpg">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="blobby"></div>
+    <br>
+    <div class="box2"></div>
+    <div class="box1"></div>
+
+    <br>
+    <br>
+    <button>Click me to start the fun</button>
+
+</body>
+
+</html>
