@@ -51,3 +51,8 @@ button{
     background-image: url('bird.png');
     background-color:none;
 }
+
+.showFish{
+    background-image: url('fish.png');
+    
+}
